@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +55,7 @@ main h2 {
 }
 
 footer {
-  margin-top: 11vh;
+  margin-top: 50px;
   padding: 15px;
   text-align: center;
   background-color: #0000cc;
@@ -84,4 +86,28 @@ footer {
 .view-pdf a {
   color: white;
   text-decoration: none;
+}
+
+.info > .fornecedor, .data, .valor, .numero, .loja {
+  padding: 3px 0;
+}
+
+.fornecedor::before {
+  content: 'Fornecedor: ';
+}
+
+.valor::before {
+  content: 'Valor: ';
+}
+
+.data::before {
+  content: 'Data: ';
+}
+
+.numero::before {
+  content: 'Número: ';
+}
+
+.loja::before {
+  content: 'Loja: '
 }
