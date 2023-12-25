@@ -1,5 +1,5 @@
-const header = document.querySelector('header')
-const footer = document.querySelector('footer')
+// const header = document.querySelector('header')
+// const footer = document.querySelector('footer')
 
 // header.innerHTML += `
 //     <div id="logo">
@@ -13,7 +13,7 @@ const footer = document.querySelector('footer')
 //     </nav>
 // `
 
-footer.innerHTML += `
-      <p>Acervo de Informaçoes do setor de <br> Prevenção de Perdas do MiniBox 31</p>
+// footer.innerHTML += `
+//       <p>Acervo de Informaçoes do setor de <br> Prevenção de Perdas do MiniBox 31</p>
 
-`
+// `
