@@ -16,6 +16,7 @@ body {
 header {
   width: 100vw;
   padding-top: 40px;
+  padding-bottom: 5px;
   background-color: #0000cc;
   text-align: center;
 }
@@ -31,19 +32,22 @@ header {
 }
 
 nav {
-  padding-top: 40px;
-  padding-bottom: 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
 }
 
 nav a {
-  text-decoration: none;
+  margin-top: 20px;
+  padding: 20px 10px 20px 10px;
   color: white;
-  padding: 20px 15px;
+  text-decoration: none;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  background-color: blueviolet;
+  text-decoration: none;
+  border: 2px solid white;
   
 }
 
