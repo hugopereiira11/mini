@@ -27,7 +27,28 @@
   <main>
     <h2>Relatório de Consumo</h2>
     <hr>
+    <div id="teste"></div>
   </main>
 
+
+  <script>
+    var teste = document.querySelector('#teste')
+
+    fetch('dados.json')
+      .then(resp => resp.json())
+      .then(dados => {
+        let data = dados.usuarios.sort((a, b) => {
+          if (a.nome < b.nome) {
+            return -1
+          }
+        })
+
+        data.map((usuario) => {
+          teste.innerHTML += `
+            <li>${usuario.nome} - ${usuario.idade} anos</li>
+          `
+        })     
+        })
+  </script>
 </body>
 </html>
