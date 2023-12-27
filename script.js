@@ -17,3 +17,4 @@ footer.innerHTML += `
       <p>Acervo de Informaçoes do setor de <br> Prevenção de Perdas do MiniBox 31</p>
 
 `;
+
