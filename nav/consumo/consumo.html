@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>
+    Consumo
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../estilo.css" rel="stylesheet">
+  <link rel="stylesheet" href="consumo.css">
+  <script src="../../script.js" defer></script>
+</head>
+<body>
+  <header></header>
+
+  <main>
+    <h2>Relatório de Consumo</h2>
+    <hr>
+    <div id="teste"></div>
+  </main>
+
+  <footer></footer>
+
+  <script>
+    const teste = document.querySelector('#teste')
+
+    fetch('dados.json')
+      .then(resp => resp.json())
+      .then(dados => {
+        let data = dados.usuarios.sort((a, b) => {
+          if (a.nome < b.nome) {
+            return -1;
+          }
+        })
+
+        data.map((usuario) => {
+          teste.innerHTML += `
+          <li>${usuario.nome} - ${usuario.idade} anos</li>
+          `
+
+        })
+      })
+
+  </script>
+
+</body>
+</html>
