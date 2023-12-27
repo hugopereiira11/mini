@@ -4,7 +4,9 @@ const orcamentos = document.querySelector("#orcamentos");
 fetch("dados.json")
   .then((resp) => resp.json())
   .then((dados) => {
-    let data = dados.sort((a, b) => {
+    console.log(dados.dezembro2023)
+
+    let data = dados.dezembro2023.sort((a, b) => {
       if (a.fornecedor < b.fornecedor) {
         return -1;
       }
